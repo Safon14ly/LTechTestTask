@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">LTechTestTask</string>
+
+    // LoginScreen
+    <string name="login">Авторизация</string>
+    <string name="sign_in">Sign In</string>
+    <string name="onCompleteMask">Маска получена!</string>
+    <string name="onCompleteLogin">Успешная авторизация!</string>
+    <string name="onErrorLogin">Ошибка Авторизации!</string>
+    <string name="phoneNumber">Phone Number</string>
+    <string name="password">Password</string>
+
+    // MainScreen
+    <string name="main">Главная</string>
+    <string name="sort_server">Server sort</string>
+    <string name="sort_date">By date sort</string>
+
+    // DetailsScreen
+    <string name="details">Подробнее</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="space_zero">0dp</dimen>
+    <dimen name="space_micro">6dp</dimen>
+    <dimen name="space_base">8dp</dimen>
+    <dimen name="space_normal">16dp</dimen>
+    <dimen name="space_medium">24dp</dimen>
+    <dimen name="space_large">32dp</dimen>
+    <dimen name="image_height">250dp</dimen>
+
+</resources>
