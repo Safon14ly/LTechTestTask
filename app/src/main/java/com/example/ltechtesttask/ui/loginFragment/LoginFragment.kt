@@ -1,6 +1,7 @@
 package com.example.ltechtesttask.ui.loginFragment
 
 import android.os.Bundle
+import android.text.Editable
 import android.view.View
 import android.view.View.GONE
 import android.view.View.VISIBLE
@@ -62,16 +63,14 @@ class LoginFragment: Fragment(R.layout.login_fragment) {
         }
 
         buttonLogin.setOnClickListener {
-            val formattedPhone = phone.ifEmpty {
-                insertCountryCode(editTextPhone.masked)
-            }
+            phone = editTextPhone.text?.let { insertCountryCode(it) }.toString()
             editTextPhone.removeTextChangedListener(maskListener)
-            viewModel.onLoginClick(formattedPhone, password)
+                viewModel.onLoginClick(phone, password)
         }
     }
 
     // Удаление из номера телефона всех не алфавитно-цифровых символов
-    private fun insertCountryCode(mask: String): String {
+    private fun insertCountryCode(mask: Editable): String {
         val regex = Regex("[^a-zA-Z0-9]")
         return regex.replace(mask, "")
     }
